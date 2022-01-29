@@ -1,3 +1,14 @@
+:root {
+  --bloodmoon-color: rgba(181, 41, 48, 0.68);
+  --bloodmoon-color-hover: rgba(181, 41, 48, 0.562);
+  --hover-color: #bd7847;
+  --text-border-color: #5f3816;
+  --white-color: #fff;
+  --btn-color: #ab6636;
+  --body-color: #c07f5aad;
+  --btn-border-color: #1a150e;
+}
+
 html {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
@@ -5,7 +16,7 @@ html {
 }
 
 body {
-  background-color: #c07f5aad;
+  background-color: var(--body-color);
   margin: 0;
   padding: 0;
 }
@@ -23,9 +34,9 @@ h6 {
 .round {
   margin: 25px 0;
   text-align: center;
-  color: #fff;
+  color: var(--white-color);
   -webkit-text-stroke-width: 2.5px;
-  -webkit-text-stroke-color: #5f3816;
+  -webkit-text-stroke-color: var(--text-border-color);
 }
 
 .axie-energy-count {
@@ -38,13 +49,13 @@ h6 {
 .energy-container {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
+  color: var(--white-color);
   -webkit-text-stroke-width: 2.5px;
-  -webkit-text-stroke-color: #5f3816;
+  -webkit-text-stroke-color: var(--text-border-color);
 }
 
 .energy {
-  border: 5px solid #5f3816;
+  border: 5px solid var(--text-border-color);
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -62,19 +73,37 @@ h6 {
   align-items: center;
   justify-content: center;
   padding: 2px 10px;
-  background-color: #ab6636;
-  border: 2px solid #1a150e;
+  background-color: var(--btn-color);
+  border: 2px solid var(--btn-border-color);
   border-radius: 1.5px;
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .energy-btn:hover {
-  background-color: #bd7847;
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
+.reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 10px;
+  background-color: var(--bloodmoon-color);
+  border: 2px solid var(--btn-border-color);
+  border-radius: 1.5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.reset:hover {
+  background-color: var(--bloodmoon-color-hover);
   cursor: pointer;
 }
 
 .bloodmoon-course {
-  background-color: rgba(181, 41, 48, 0.68);
+  background-color: var(--bloodmoon-color);
 }
