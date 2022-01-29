@@ -15,7 +15,7 @@ export default function AxieEnergyCount() {
 
       <div class="match-buttons">
         <div class="energy-btn next-round">Next Round</div>
-        <div class="energy-btn reset">New Game</div>
+        <div class="reset">New Game</div>
       </div>
     </div>
   `;
