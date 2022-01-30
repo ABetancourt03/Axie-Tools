@@ -62,10 +62,10 @@ h6 {
 }
 
 .energy-buttons {
-  width: 15%;
   display: flex;
   flex: row nowrap;
   justify-content: space-between;
+  align-self: center;
 }
 
 .energy-btn {
@@ -84,6 +84,11 @@ h6 {
 .energy-btn:hover {
   background-color: var(--hover-color);
   cursor: pointer;
+}
+
+.quit-energy,
+.add-energy {
+  width: 34px;
 }
 
 .reset {
