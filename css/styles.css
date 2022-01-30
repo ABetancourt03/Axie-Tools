@@ -33,9 +33,22 @@ h6 {
   padding: 0;
 }
 
+.root {
+  text-align: center;
+}
+
+.round-title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .round {
+  width: 15%;
   margin: 25px 0;
   text-align: center;
+  background-color: var(--body-color);
+  border-radius: 10px;
   color: var(--white-color);
   -webkit-text-stroke-width: 2.5px;
   -webkit-text-stroke-color: var(--text-border-color);
@@ -113,4 +126,46 @@ h6 {
 
 .bloodmoon-course {
   background-color: var(--bloodmoon-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .round {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .round {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .round {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .round {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .round {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .round {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .round {
+    width: 95%;
+  }
 }
