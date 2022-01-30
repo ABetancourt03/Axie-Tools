@@ -12,8 +12,8 @@ export let energy = 3;
 let roundNumber = 1;
 
 document.addEventListener('click', (e) => {
-  let $round = $('.round');
-  let $actualEnergy = $('.actual-energy');
+  const $round = $('.round');
+  const $actualEnergy = $('.actual-energy');
 
   if (e.target.textContent === '-1') {
     energy--;
@@ -39,14 +39,14 @@ document.addEventListener('click', (e) => {
     $actualEnergy.innerHTML = `${energy}/10`;
     $round.innerHTML = `Round ${roundNumber}`;
   }
+  if (roundNumber === 10) {
+    $body.classList.add('bloodmoon-course');
+  }
   if (e.target.textContent === 'New Game') {
     roundNumber = 1;
     energy = 3;
     $actualEnergy.innerHTML = `${energy}/10`;
     $round.innerHTML = `Round ${roundNumber}`;
     $body.classList.remove('bloodmoon-course');
-  }
-  if (roundNumber === 10) {
-    $body.classList.add('bloodmoon-course');
   }
 });
