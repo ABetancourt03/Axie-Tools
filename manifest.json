@@ -1,0 +1,24 @@
+{
+  "name": "Axie Tools",
+  "short_name": "Axie Tools",
+  "description": "Tools for Axie Infinity.",
+  "background_color": "#c07f5aad",
+  "theme_color": "#c07f5aad",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./?utm_source=web_app_manifest",
+  "scope": "./",
+  "lang": "es-ES",
+  "icons": [
+    {
+      "src": "assets/favicon.png",
+      "sizes": "969x868",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/favicon_1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}
