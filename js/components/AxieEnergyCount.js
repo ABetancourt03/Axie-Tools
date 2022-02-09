@@ -1,4 +1,4 @@
-import {energy} from '../App.js';
+import { energy } from '../App.js'
 
 export default function AxieEnergyCount() {
   return `
@@ -18,5 +18,5 @@ export default function AxieEnergyCount() {
         <div class="reset">New Game</div>
       </div>
     </div>
-  `;
+  `
 }
